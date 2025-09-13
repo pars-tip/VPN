@@ -175,3 +175,22 @@ body {
     transform: translateY(0);
   }
 }
+body {
+  font-family: "Vazir", Tahoma, sans-serif;
+  font-size: 15px; /* کوچیک‌تر */
+  background: linear-gradient(135deg, #1e1b4b, #0f172a);
+  color: #e2e8f0;
+  line-height: 1.8;
+}
+
+.logo {
+  height: 60px; /* بزرگ‌تر شد */
+}
+
+.card ul li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
