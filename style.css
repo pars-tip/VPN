@@ -1,15 +1,15 @@
-/* Reset */
+/* Reset اولیه */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Vazir", Tahoma, sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #1e1b4b, #0f172a);
-  color: #e2e8f0;
-  line-height: 1.8;
+  font-family: 'Vazir', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
 }
 
 .container {
@@ -20,177 +20,191 @@ body {
 
 /* Header */
 .header {
-  background: rgba(15, 23, 42, 0.9);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
+  background: #1a73e8;
+  padding: 15px 0;
+  color: #fff;
 }
 
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header .logo {
+  max-height: 70px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #38bdf8, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.header .nav {
+  display: inline-block;
+  float: left;
 }
 
-.nav a {
-  margin-left: 1rem;
-  color: #e2e8f0;
+.header .nav a {
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.nav a:hover {
-  color: #38bdf8;
+.header .nav a:hover {
+  color: #ffdd57;
 }
 
 /* Hero */
 .hero {
-  text-align: center;
-  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #1a73e8, #4285f4);
   color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
-.hero h2 {
+.hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: #cbd5e1;
+  margin-bottom: 20px;
 }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  background: linear-gradient(90deg, #38bdf8, #ec4899);
-  color: #fff;
-  padding: 0.8rem 1.7rem;
-  border-radius: 12px;
+.hero .btn {
+  background: #ffdd57;
+  color: #1a73e8;
+  padding: 12px 25px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(56,189,248,0.6);
-}
-
-/* Smaller Button */
-.small-btn {
-  padding: 0.5rem 1.2rem;
-  font-size: 0.9rem;
-  border-radius: 8px;
+.hero .btn:hover {
+  background: #ffc107;
+  color: #1a73e8;
 }
 
 /* Services */
 .services {
-  padding: 4rem 1rem;
+  margin: 40px 0;
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2.5rem;
-  background: linear-gradient(90deg, #38bdf8, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  color: #1a73e8;
 }
 
+/* کارت‌ها */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background: #1e293b;
-  border-radius: 18px;
-  padding: 2rem;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(56,189,248,0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .card h3 {
-  margin-bottom: 1rem;
-  color: #38bdf8;
+  color: #1a73e8;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
 }
 
 .card ul {
-  list-style: disc;
-  margin: 1rem 0;
-  padding-right: 1.5rem;
-  color: #94a3b8;
+  list-style: none;
+}
+
+.card ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.card ul li span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card ul li .btn {
+  background: #1a73e8;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.card ul li .btn:hover {
+  background: #0d47a1;
+}
+
+/* Footer */
+.footer {
+  background: #1a73e8;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Contact */
 .contact {
   text-align: center;
-  padding: 4rem 1rem;
-  background: rgba(30,41,59,0.8);
-  border-radius: 20px;
-  margin: 2rem auto;
+  margin: 40px 0;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background: #0f172a;
-  color: #94a3b8;
-  font-size: 0.9rem;
+.contact .btn {
+  background: #ffdd57;
+  color: #1a73e8;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-/* Animations */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 1s forwards;
+.contact .btn:hover {
+  background: #ffc107;
 }
 
-.fade-in:nth-child(2) { animation-delay: 0.3s; }
-.fade-in:nth-child(3) { animation-delay: 0.6s; }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* ریسپانسیو */
+@media screen and (max-width: 768px) {
+  .header .nav {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
   }
-}
-body {
-  font-family: "Vazir", Tahoma, sans-serif;
-  font-size: 15px; /* کوچیک‌تر */
-  background: linear-gradient(135deg, #1e1b4b, #0f172a);
-  color: #e2e8f0;
-  line-height: 1.8;
-}
 
-.logo {
-  height: 60px; /* بزرگ‌تر شد */
-}
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-.card ul li {
-  margin-bottom: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
 }
