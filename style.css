@@ -144,3 +144,47 @@ body {
   margin-top: 40px;
   font-size: 13px;
 }
+/* راست‌چین کردن کل سایت */
+body {
+  direction: rtl;
+  text-align: right;
+}
+.top-banner {
+  background: #f59e0b; /* رنگ جذاب */
+  color: white;
+  text-align: center;
+  padding: 25px 20px; /* ارتفاع بیشتر */
+  font-size: 22px;   /* متن بزرگ‌تر */
+  font-weight: bold;
+  border-radius: 12px; /* گوشه گرد برای ظاهر بهتر */
+  margin: 20px 0;     /* فاصله از لوگو و بخش بعدی */
+  direction: rtl;     /* راست‌چین */
+}
+.footer {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #7e22ce);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
